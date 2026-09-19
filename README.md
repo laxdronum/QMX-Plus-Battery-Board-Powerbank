@@ -1,6 +1,6 @@
-# Universal 12V Type-C Power Bank & QDX Go-Bag
+# Universal 12V Powerbank Designed around QMX+ Battery and Audio Shield & Usage Example
 
-![Project Overview](Images/QDX%20Go-Bag%20(2).jpg)
+![Project Overview](Images/QDX%20Go-Bag%20(2).png)
 
 > A highly adaptable, 12V portable power bank system designed to supply power to various 12V transceivers and electronic devices.
 
@@ -29,7 +29,7 @@ This specific configuration creates an ultra-compact, grab-and-go field kit idea
 
 This build utilizes the barebones PCB of the original QMX+ Battery Board. 
 
-**Note:** For detailed schematics, full board capabilities, and the **Gerber files** required for manufacturing, please refer to the [Main QMX+ Battery Board Repository](https://github.com/laxdronum/QMX-Plus-Battery-and-Audio-Board-Rev.2).
+**Note:** For comprehensive board assembly steps, please review the `ASSEMBLY.md` file in the [Main QMX+ Battery Board Repository](https://github.com/laxdronum/QMX-Plus-Battery-and-Audio-Board-Rev.2). The main repository also contains the detailed schematics and the **Gerber files** required for manufacturing.
 
 ### Populated Components
 *   3x 18650 Battery holders (using 2800mAh cells)
@@ -41,22 +41,22 @@ This build utilizes the barebones PCB of the original QMX+ Battery Board.
 *   5.5mm DC female jack
 
 ### Build & Wiring Notes
+*   **Module Mounting:** All modules (such as the BMS and Type-C board) must be soldered onto male pin headers.
 *   **Component Omission:** The LM386 audio amplifier and its associated components from the original QMX+ board are **not** populated in this build.
 *   **Power Switch:** The KCD-11 switch directly cuts the main power. It is soldered directly to the 12V jumper location on the PCB.
 *   **Outputs & Monitoring:** The voltmeter (with its VCC and Signal wires tied together) and the 5.5mm DC jack can be soldered directly to the `JP101` (+ and -) terminals. 
-*   **Alternative Soldering Point:** Alternatively, connections can be made using the capacitor pad and THT hole located immediately next to `JP101`. These points are wired in parallel with the `JP101` terminals (this can be easily verified by following the PCB traces).
+*   **Alternative Soldering Point:** Soldering two separate wires to the single `JP101` + and - terminals can be cramped and difficult. For an easier build, you can solder the second set of wires to the capacitor pad and its corresponding THT hole located immediately next to `JP101`. These points are wired in parallel with the `JP101` terminals (easily verified by following the PCB traces).
 
 ---
 
 ## 3D Printing & Assembly
 
-Two STL files are provided for the enclosure to accommodate different materials and field requirements. 
+Two STL files are provided for the enclosure: one for the main body and one for the snap-on lid.
 
 **Enclosure Features:**
 *   **Snap-Fit Design:** The lid securely snaps into place on the main body without requiring extra hardware.
-*   **PCB Mounting:** The PCB is secured inside the enclosure using **two M3x5mm screws**.
+*   **PCB Mounting:** The PCB is secured inside the main body using **two M3x5mm screws**.
 *   **Clean Design:** *Note that the enclosures shown in the project photos feature custom text and logos for personal aesthetic preferences. The STL files provided in this repository are completely clean and blank.*
 
 **Material Recommendations:**
-1.  **Prototype Version:** The initial enclosure (blue) was printed in **PLA**. Suitable for testing and indoor use.
-2.  **Field Version:** The final field-ready enclosure (grey) was printed in **ABS** to ensure maximum physical durability and thermal resistance during outdoor operations.
+While the enclosure can be printed in **PLA** or **PETG** for general use, **ABS** is highly recommended for the final build to ensure maximum physical durability and thermal resistance during outdoor field operations.
