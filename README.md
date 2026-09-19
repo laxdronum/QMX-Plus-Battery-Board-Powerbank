@@ -27,7 +27,7 @@ This specific configuration creates an ultra-compact, grab-and-go field kit idea
 *   **Universal 12V Output:** Standard 5.5mm DC barrel jack provides direct power for 12V transceivers.
 *   **Modern Charging:** Integrated Type-C input for convenient recharging.
 *   **Voltage Monitoring:** Built-in 0.28" digital voltmeter to track battery capacity during field use.
-*   **Compact Form Factor:** Designed to stack efficiently with compact transceivers (like the QDX) inside minimal footprint pouches.
+*   **Compact Form Factor:** Measuring 135mm (L) x 105mm (W) x 36mm (H), it is designed to stack efficiently with compact transceivers (like the QDX) inside minimal footprint pouches.
 
 ---
 
@@ -40,9 +40,9 @@ This build utilizes the barebones PCB of the original QMX+ Battery Board.
 **Note:** For comprehensive board assembly steps, please review the `ASSEMBLY.md` file in the [Main QMX+ Battery Board Repository](https://github.com/laxdronum/QMX-Plus-Battery-and-Audio-Board-Rev.2). The main repository also contains the detailed schematics and the **Gerber files** required for manufacturing.
 
 ### Populated Components
-*   3x 18650 Battery holders (using 2800mAh cells)
-*   3S 20A Battery Management System (BMS)
-*   Type-C Charging Module
+*   3x 18650 Battery holders (I'm using 2800mAh cells)
+*   3S 20A BMS
+*   Type-C Charging Module (DDTCCRUB)
 *   3A Glass fuse and dedicated fuse holder
 *   KCD-11 Main power switch
 *   0.28" Mini digital voltmeter
@@ -60,14 +60,16 @@ This build utilizes the barebones PCB of the original QMX+ Battery Board.
 ## 3D Printing & Assembly
 
 ![3D Model Top View](Images/3D%20Model%20Top.jpg)
+![3D Model without Components](Images/3D%20Model%20without%20Components.jpg)
 ![3D Model Bottom View](Images/3D%20Model%20Bottom.jpg)
 
 The custom enclosure was designed from scratch using **FreeCAD**. Two STL files are provided for the enclosure: one for the main body and one for the snap-on lid.
 
 **Enclosure Features:**
+*   **Physical Dimensions:** 135mm Length x 105mm Width x 36mm Height.
 *   **Snap-Fit Design:** The lid securely snaps into place on the main body without requiring extra hardware.
 *   **PCB Mounting:** The PCB is secured inside the main body using **two M3x5mm screws**.
 *   **Clean Design:** *Note that the enclosures shown in the project photos feature custom text and logos for personal aesthetic preferences. The STL files provided in this repository are completely clean and blank.*
 
 **Material Recommendations:**
-While the enclosure can be printed in **PLA** or **PETG** for general use, **ABS** is highly recommended for the final build to ensure maximum physical durability and thermal resistance during outdoor field operations.
+While the enclosure can be printed in **PLA** or **PETG** for general use, I've used **ABS** for the final build for maximum physical durability and thermal resistance during outdoor field operations.
