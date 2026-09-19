@@ -8,6 +8,14 @@ This project is a hardware spin-off utilizing the printed circuit board from the
 
 ---
 
+## Device Overview
+
+Below are the front, diagonal, and rear views of the assembled power bank unit.
+
+![Front View](Images/QDX%20Go-Bag%20(7).jpg)
+![Diagonal View](Images/QDX%20Go-Bag%20(1).jpg)
+![Rear View](Images/QDX%20Go-Bag%20(3).jpg)
+
 ## The SOTA/POTA Go-Bag Implementation
 
 While engineered as a universal 12V power bank, this system pairs exceptionally well with the QRP Labs QDX digital transceiver. During field testing, it was discovered that the power supply, the QDX, and all necessary cables fit perfectly inside a Decathlon Solognac mini pouch. 
@@ -51,7 +59,10 @@ This build utilizes the barebones PCB of the original QMX+ Battery Board.
 
 ## 3D Printing & Assembly
 
-Two STL files are provided for the enclosure: one for the main body and one for the snap-on lid.
+![3D Model Top View](Images/3D%20Model%20Top.jpg)
+![3D Model Bottom View](Images/3D%20Model%20Bottom.jpg)
+
+The custom enclosure was designed from scratch using **FreeCAD**. Two STL files are provided for the enclosure: one for the main body and one for the snap-on lid.
 
 **Enclosure Features:**
 *   **Snap-Fit Design:** The lid securely snaps into place on the main body without requiring extra hardware.
